@@ -1,0 +1,9 @@
+Question 4
+
+Which of the given algorithms could have been used to construct the
+mininum spanning tree? Justify your answer.
+
+The DFS property is to reach the furthest possible as it can so this will be wrong.
+Dijkstra's algorithm uses to find the shortest path from a vertex to another not to use in finding a minimum spanning tree (mst)
+Prim's is a mst algorithm but due to the property of the mst that it should be connected so by adding edges like this, kruskals will be the algorithm that can constructed the above minimum spanning tree
+

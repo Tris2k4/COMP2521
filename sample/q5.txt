@@ -1,0 +1,12 @@
+Question 5
+
+(a) Describe and justify the steps you would take to determine which
+    sorting algorithm the program uses.
+To determine which sort algorithm is using, we can measure the input time, if the processing time slow then we can say that it is selection sort since it has best, average and worst running time is O(n^2). For median of three quicksort is taking the median of low high and middle, it will unlikely to have the worst cast time complexity of O(n^2). If the running time is fast then it will be O(nlogn) hence median of three quick sort. To make it more accuracy, we should test it with difference input sizes and re-run it for 3 times
+
+
+(b) Is the sorting algorithm that the program uses stable? How confident
+    are you in your conclusion? Explain your answer.
+
+The running algorithm is stable since all the pairs such as {4, 7}, {4, 3}, {4, 4} are in the order of its original input
+
