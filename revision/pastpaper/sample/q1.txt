@@ -1,0 +1,13 @@
+Question 1
+
+(a) What is the maximum input size that can be processed? Justify your
+    answer.
+let T(n) be the running time of the algorithm, since the algorithm runs with time complexity is 2^n therefore we have T(n) = k*O(2^n) where we assume the number of k is the number of time we repeat using the algorithm. Since n = 10 and the running time is 1 day, therefore we have T(10) = k*2^10 -> 1 = k*2^10 -> k = 1/2^10.
+Then if we keep increasing the input to 20, we have T(20) = k*2^20 -> T(20) = 1/2^10 * 2^20 = 1024. Since this exceed 1000 so therefore the maximum input we can have is n = 19 
+
+
+(b) What are the time complexities of fnA() and fnB() in terms of a and
+    b? Justify your answer.
+fnA() will have the time complexity of O(b - a) since it keep increasing a by 1. And if a = b then the recursion will stop and return a so therefore it will be O(b - a)
+fnB() will have the time complexity of O((b-a)^2) since for each time we call function b then function will do n times. Since we run b - a times for b and b - a times for function A. Hence the time complexity will be O((b-a)^2)
+

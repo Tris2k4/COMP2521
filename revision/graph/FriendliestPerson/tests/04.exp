@@ -1,0 +1,18 @@
+Enter number of vertices: Enter number of edges: Enter edges in the form v-w: 
+Graph: nV = 7
+Edges:
+ 0: 0-1 0-2 0-3 0-5
+ 1: 1-0 1-2 1-3 1-4
+ 2: 2-0 2-1 2-3 2-4
+ 3: 3-0 3-1 3-2 3-4
+ 4: 4-1 4-2 4-3
+ 5: 5-0 5-6
+ 6: 6-5
+
+Friendliness of 0: 3.583333
+Friendliness of 1: 2.916667
+Friendliness of 2: 2.916667
+Friendliness of 3: 2.916667
+Friendliness of 4: 2.666667
+Friendliness of 5: 3.283333
+Friendliness of 6: 2.450000

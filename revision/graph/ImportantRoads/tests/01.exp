@@ -1,0 +1,10 @@
+Enter number of vertices: Enter number of edges: Enter edges in the form v-w: 
+Graph: nV = 3
+Edges:
+ 0: 0-1
+ 1: 1-0 1-2
+ 2: 2-1
+
+Important roads:
+0-1
+1-2

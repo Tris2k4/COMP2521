@@ -1,0 +1,31 @@
+---> Edge flip reachable <---
+
+Complete the function edgeFlipReachable(Graph g, int src), which takes a directed graph
+and a start vertex, and prints the vertices which are reachable with the special condition
+that all edges are flipped after each move.
+
+Each vertex should be printed followed by a newline. The source vertex should be included.
+
+For example, in the graph below, if we start at vertex 0 we can follow the edge to vertex 1.
+
+0 ---> 1 <--- 2
+^
+
+After this move the edges flip, and we can then move from 1 to 2.
+
+0 <--- 1 ---> 2
+       ^
+
+Hence, for this input the function should print
+0
+1
+2
+
+
+For this example, vertex 4 can be reached by taking the path 0 -> 1 -> 2 -> 3 -> 4.
+It can not be reached directly through the path 0 -> 1 -> 4.
+
+    2 --> 3
+     \   ^
+      v /
+0 ---> 1 ---> 4

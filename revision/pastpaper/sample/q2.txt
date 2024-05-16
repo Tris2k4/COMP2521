@@ -1,0 +1,7 @@
+Question 2
+
+Explain why the compilation error occurred and briefly describe how it
+can be fixed.
+
+
+This error occurred because there is no struct field for us to directly access the edges of a graph. To fix this we need to read the ADT again since if we try to access directly to the behind of the ADT and hence this will violate the ADT rules. Therefore to fix this issue, the user should go back to the ADT file and read the instruction carefully.

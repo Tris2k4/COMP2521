@@ -1,0 +1,38 @@
+Enter number of vertices: Enter number of edges: Enter edges in the form v-w: 
+Graph: nV = 6
+Edges:
+ 0: 0-1
+ 1:
+ 2: 2-1 2-3 2-4
+ 3:
+ 4: 4-1 4-5
+ 5:
+
+Enter the source vertex: Reachable from vertex 0:
+0
+1
+2
+3
+4
+5
+Enter the source vertex: Reachable from vertex 1:
+1
+Enter the source vertex: Reachable from vertex 2:
+0
+1
+2
+3
+4
+5
+Enter the source vertex: Reachable from vertex 3:
+3
+Enter the source vertex: Reachable from vertex 4:
+0
+1
+2
+3
+4
+5
+Enter the source vertex: Reachable from vertex 5:
+5
+Enter the source vertex: 

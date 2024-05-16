@@ -1,0 +1,40 @@
+---> Find the crotch <---
+
+A 'human graph' is an undirected graph with the following features:
+- The head (a cycle)
+- A torso (vertices connected in a line)
+- Two arms (vertices connected in a line, both starting at the same torso vertex)
+- Two legs (vertices connected in a line, both starting at the end of the torso)
+
+For example, this is a human graph:
+
+  1 ----- 2
+  |       |
+  |       |
+  3 - 4 - 5
+      |
+      8
+      |
+  7 - 6 - 9
+      |
+      0
+      |
+      11
+     / \
+    13  12
+   /     \
+  14      10
+
+The vertex labelling is arbitrary.
+
+The following constraints apply:
+- The head contains at least 3 vertices
+- Both arms have the same length
+- Both legs have the same length
+- The head, arms and legs all connect to the torso at different vertices
+  (i.e. the torso contains at least 3 vertices/2 edges)
+
+The crotch vertex is where the legs connect to the torso - B in the example.
+
+Your task is to complete the function findTheCrotch(Graph g), which takes a human
+graph and returns the crotch vertex.

@@ -1,0 +1,76 @@
+
+========================================================================
+                          Complexity Analysis
+========================================================================
+
+NOTE:
+- Your time complexities should be in big-O notation.
+- Your time complexities should be in terms of n and m, where n and m
+  are the number of elements in each of the sets respectively.
+- You must assume that the underlying binary search trees are balanced,
+  even though your implementation might not use a balanced BST yet.
+
+-----------------
+    SetUnion
+-----------------
+
+Worst-case time complexity: O(nlogn) + O(mlog(m + n))
+
+Explanation: 
+The time complexity of SetUnion is O(nlogn) + O(mlog(m + n)). At first, we called the function SetUnionHelper, 
+the purpose of this function is to traverse to insert all the elements in set 1 to set 3. Hence the traverse time complexity will be O(n)
+and because we will call the function SetInsert and this function is O(logn) time since the tree is height balanced (AVL tree)
+. Therefore the time complexity will be O(nlogn) where n is the number of nodes. Then we continue to consider the function setUnionInsertHelper,
+this function will whether there is no item in set 2 then we will insert to set 3. 
+Hence the time complexity for this function is mlog(m + n) where m is the number of node we insert and m + n is the worst case of the union set's size.
+
+-----------------
+ SetIntersection
+-----------------
+
+Worst-case time complexity: O(nlog(m))
+
+Explanation: 
+Consider the function setIntersectionHelper, it will check whether there is an item of set 2 in set 1. If they there is, then we wil insert into set 3.
+Since we are traversing each node in the tree and call SetContain function each time, hence it will have the time complexity of O(nlog(m)) where n is the number of
+nodes we will traverse and log(m) where we traverse and insert into the set.
+
+-----------------
+    SetEquals
+-----------------
+
+Worst-case time complexity: O(nlog(m))
+
+Explanation: 
+Consider the function setEqualsHelper, it will traverse to each node in a set 1 tree and checking if there is no item in set 2 then return false. 
+Since we are traversing in each node in the tree and call the function SetContain, therefore it will have the time complexity of O(nlog(m)) where n
+is the number of nodes we will traverse and log(m) where we search the item.
+
+-----------------
+    SetSubset
+-----------------
+
+Worst-case time complexity: O(nlog(m))
+
+Explanation: 
+Consider the function setSubsetHelper function, it will traverse each node in a set 1 tree or set 2 tree 
+(depending on the size of set 1 and set2, if set 1 size is less than or equals to set 2 then it will traverse the set 1 tree and vice versa),
+because we are traversing in each node in the tree and call the function SetContain to check if the item is not found then return false which mean it is not a subset.
+Hence, it will have the time complexity of O(nlog(m)) where n is the number of nodes we will traverse and log(m) where we check the item is in other set by calling SetContain function.
+
+========================================================================
+               Design Documentation for Cursor Operations
+========================================================================
+
+If you completed the cursor operations, you must explain the design and
+implementation of your solution here.
+
+
+
+
+
+
+
+
+
+

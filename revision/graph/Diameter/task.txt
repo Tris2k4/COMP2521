@@ -1,0 +1,16 @@
+---> Diameter <---
+
+The diameter of a graph is the number of edges in the longest shortest path between two vertices.
+
+That is, diameter(G) =   max    {length of shortest path from v to w}. 
+                      v, w ∈ G
+
+For example, this graph has diameter 4 (the length of the path from 0 to 7):
+
+ 0 --- 1 --- 2 --- 3
+ |     |     |     |
+ 4 --- 5 --- 6 --- 7
+
+Note that there are longer paths from 0 to 7, but only the shortest is considered.
+
+Complete the function `int diameter(Graph g)` that returns the diameter of G.
